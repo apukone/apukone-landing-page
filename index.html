@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apukone - Avoimen lähdekoodin ratkaisu tekoälyn hallintaan</title>
+    <meta name="description"
+        content="Apukone on avoimen lähdekoodin ratkaisu omien tekoälymallien hallintaan suojatusti omassa ympäristössä.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Apukone</a>
+            <div class="nav-links">
+                <a href="#how-it-works">Kuinka se toimii</a>
+                <a href="#why-apukone">Miksi Apukone?</a>
+                <a href="#agents">Agentit</a>
+            </div>
+            <a href="#" class="cta-button small">Aloita nyt</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Avoimen lähdekoodin ratkaisut tekoälyn hallintaan.</h1>
+            <p class="hero-subtext">Apukone tarjoaa avoimen lähdekoodin ratkaisut omien tekoälymallien hallintaan.
+                Apukoneen
+                avulla pidät omat tekoälymallit suojatusti omassa ympäristössä.</p>
+            <div class="hero-actions">
+                <a href="#how-it-works" class="cta-button">Lue lisää</a>
+                <a href="https://github.com/apukone/apukone" class="secondary-button">GitHub</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </header>
+
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">Näin se toimii</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Asenna</h3>
+                    <p>Asenna Apukone omalle palvelimelle.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Kirjaudu</h3>
+                    <p>Kirjaudu sisään käyttöliittymälle admin-käyttäjällä.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Luo</h3>
+                    <p>Luo uusi agentti käyttöliittymältä.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Rakenna</h3>
+                    <p>Rakenna oma agentti tai käytä valmista Apukoneen agenttia, sekä kopioi uuden agentin access_token
+                        ympäristömuuttujaksi.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Käynnistä</h3>
+                    <p>Käynnistä agentti haluamallasi palvelimella.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Keskustele</h3>
+                    <p>Keskustele agentin kanssa Apukoneen käyttöliittymältä.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-apukone" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Miksi Apukone?</h2>
+            <div class="content-split">
+                <div class="text-block">
+                    <p>Tietoturvasyistä monien julkisten tekoälyjen, kuten ChatGPT:n käyttäminen ei välttämättä ole
+                        turvallista. Vaikka nämä julkiset tekoälyt ovatkin todella edistyneitä ja tietävät paljon,
+                        niiden tietoturvallisuudesta ei ole takuita. Esim. yrityksen sisäisten tietojen syöttäminen
+                        ChatGPT:lle voi aiheuttaa tietovuodon tai muun tietosuojariskin.</p>
+                    <p>Apukone on ratkaisu tekoälymallien hyödyntämiseen suojatussa ympäristössä, jonka itse hallitset.
+                        Kaikki verkko- sekä tietoliikenne on täysin hallittavissa omien kriteereiden mukaisesti.
+                        Asentamalla Apukoneen, sekä agentit ja tekoälymallit omalle suojatulle palvelimelle voit olla
+                        varma, että mitään tietoja ei pääse vuotamaan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agents" class="section">
+        <div class="container">
+            <h2 class="section-title">Esimerkki Agentteja</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🏒</div>
+                    <h3>NHL Agentti</h3>
+                    <p>Hakee NHL Enterprisen tarjoamasta julkisesta rajapinnasta tietoja MCP:n avulla.</p>
+                    <ul class="example-queries">
+                        <li>"Give me the scores from last night's games."</li>
+                        <li>"Who is the leading goal scorer this season?"</li>
+                    </ul>
+                    <small>Suositeltu malli: Qwen3:8b</small>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">☀️</div>
+                    <h3>Sää agentti</h3>
+                    <p>Kertoo säätietoja reaaliaikaisesti haluamastasi sijainnista.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📈</div>
+                    <h3>Pörssi agentti</h3>
+                    <p>Kertoo yrityksen osaketietoja ja pörssikursseja luotettavasti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="section">
+        <div class="container">
+            <h2 class="section-title">Muita mahdollisia käyttötapauksia</h2>
+            <div class="use-cases-list">
+                <div class="use-case-item">
+                    <h3>🏢 Yritysten sisäiseen käyttöön</h3>
+                    <p>Agentit voivat tutkia dokumentaatiota, tietokantoja, intra-järjestelmiä tai paljon muuta.</p>
+                </div>
+                <div class="use-case-item">
+                    <h3>💬 Yleiset kielimalli agentit</h3>
+                    <p>Täysin puhtaasti ns. kielimalli-agentteja, jotka vastailevat kysymyksiin ja keskustelevat
+                        käyttäjien kanssa.</p>
+                </div>
+                <div class="use-case-item">
+                    <h3>⚡ Automaatio agentit</h3>
+                    <p>Supervoimia kuten "tallenna tämä teksti tietokantaan", "merkitse tämä palaveri kalenteriin",
+                        "merkitse tämä tehtävä valmiiksi".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Apukone. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
